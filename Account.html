@@ -12,7 +12,7 @@
 </head>
 <body>
     
-   <div class="home">
+    <div class="home">
     <nav class="navigation">
 
         <h1><a href="index.html">Fooding</a></h1>
@@ -21,46 +21,111 @@
                 <li><a href="about.html">About us</a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a class="first-nav" href="Account.html">Account</a></li>
-                <li><a  href="reservation.html">reservation</a></li>
+                <li><a  href="help.html">Help</a></li>
             </ul>
                 
                 <div class="add">
-                <a class="sign" href="sign-in.html">sign in</a>
+                <a class="sign" href="Account.html">sign in</a>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
                 <sup id="notif">0</sup>
             </div>
     </nav> 
     <!-- <div class="square">sing-up</div>-->
-    <form action=""> 
+
+
     <div class="sign-all">
+        <form action=""> 
         <div class="sign-up">
+            <img class="profil" src="./images/account-profil.webp" alt="logo">
             <h1>sing up</h1>
             <div class="all-input">
                     <input type="text" placeholder="Firstname">
                     <input type="text" placeholder="lastname">
-
-      
+                
+                
                     <input type="email" placeholder="email" class="w-100" required>
                 
                 
                     <input type="password" placeholder="password" class="w-100" required>
-              
-            </div class="span">
-            <p>Already have an acaunt? <a href="sign-in.html">login</a></p>
+            
+            </div>
+            <p class="question">Already have an acaunt? <a href="sign-in.html">login</a></p>
             <div class="submit">
                 <input type="submit" value="Sing up"> 
             </div>
         </div>
+        
+        </form>
+
+
+    </div>
+
+            <h2>also welcome to our restaurant </h2>
+
+
+    <div class="container">
+
+        <div class="image">
+                <img src="./images/table.jpg" alt="logo">
+        </div>
+
+        <form action="" class="form">
+            
+        <h3>Online Reservation</h3>
+            
+
+            <div class="input-text">
+                <input class="person" type="text" name="name" placeholder="Your Name" autocomplete="off">
+
+            <input class="person" type="tel" name="phone" placeholder="Phone Number" autocomplete="off" >
+            </div>
+
+
+            <div class="input-chose">
+                <select class="person" name="person">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                </select>
+
+
+
+                <input class="person" type="date" name="reservation-date" >
+
+
+
+                <select class="person" name="person" >
+                    <option value="09:00am">09 : 00 </option>
+                    <option value="11:00am">11 : 00 </option>
+                    <option value="13:00pm">13 : 00 </option>
+                    <option value="15:00pm">15 : 00 </option>
+                    <option value="17:00pm">17 : 00 </option>
+                    <option value="19:00pm">19 : 00 </option>
+                    <option value="21:00pm">21 : 00 </option>
+                    <option value="23:00pm">23 : 00 </option>
+                </select>
+            </div>
+
+
+        <textarea name="message" placeholder="Message" autocomplete="off" class="input-textarea"></textarea>
+
+        <button type="submit" class="btn">
+            <span class="text text-1">Book A Table</span>
+        </button>
+
+        </form>
 
         
     </div>
-    </form>
-   
+
     <footer class="footer">
         <div class="content">
             <div class="contact-us">
                 <h3>Contact Us</h3>
-                 
+                
                 <ul>
                     <li>Email : youssefkhaldane@gmail.com</li>
                     <li>Phone : +212 635725396</li>
@@ -69,9 +134,9 @@
                 </ul>
             </div>
             <div class="quick-links">
-             
+            
                     <h3>Quick links</h3>
-               
+                
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
@@ -83,7 +148,7 @@
             <div class="Follow-us ">
             
                     <h3>Follow Us</h3>
-              
+                
                 <ul class="social">
                     <li><i  class="fa-brands fa-instagram">    instagram</i></li>
                     <li><i class="fa-brands fa-twitter">    twitter</i></li>

@@ -7,25 +7,28 @@
 }
 
 *::selection {
-   background-color: var(--main-color);
+   background-color: var(var(--main-color));
    color: white;
 }
 
-
 :root {
-   --main-color: goldenrod;
-   --background: #f4f4f4;
-   --secend-color: #e4d0be;
-   --white-color: #fff;
-   --black-color: #000;
-   --text-color: #707070;
-   --fotter-color: #fff;
-   --p-color: #3e3d3d;
-}
+      --main-color:goldenrod ;
+      --background: #f4f4f4;
+      --secend-color: #e4d0be;
+      --white-color: #fff;
+      --black-color: #000;
+      --text-color: #707070;
+      --fotter-color: #fff;
+      --p-color: #3e3d3d;
+      --h3-font: 2.2em;
+      --special-titre: 2.9rem;
+   }
+
+
 body {
-    /* background-color: #333c48; */
-   background-color: #F4F4F4;
+   background-color:  #f4f4f4;
    font-family: 'Poppins', sans-serif;
+   height: 100vh;
 }
 .navigation {
    display: flex;
@@ -33,18 +36,17 @@ body {
    align-items: center;
    padding: 1.5% 5%;
    color:var(--black-color);
-}
+   }
 
 .navigation ul {
    display: flex;
    list-style: none;
    font-size: 18px;
-
+   
 }
 
 .navigation h1 {
    font-size: 40px;
-   color: var(--black-color);
 }
 
 .navigation ul a,
@@ -56,7 +58,10 @@ h1 a,
    font-weight: 600;
    transition: 1s;
 }
-
+.navigation h1 a{
+   font-size: 40px;
+   color:var(--black-color);
+}
 /* .navigation ul a:hover,
 .navigation .first-nav {
    border-bottom: 3px solid var(--main-color);
@@ -73,7 +78,6 @@ h1 a,
 .all a:hover{
    transform: scale(1.1);
 }
-
 .all .first-nav {
    color: var(--main-color);
    opacity: 1;
@@ -110,94 +114,66 @@ h1 a,
    background-color: transparent;
    border: 1px solid var(--main-color);
 }
-.ABOUT{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   padding: 100px 8%;
-   gap: 0px;
-
-}
-
-.ABOUT .imgs {
-   border: 2px dotted #c8c8c8;
-   transform: rotate(7deg);
-   border-radius: 10px;
-   width: 350px;
-   height: 350px;
-   margin: 20px;
-}
-
-.ABOUT img {
-   width: 350px;
-   height: 350px;
-   border-radius: 10px;
-   transform: rotate(-10deg);
-   object-fit: cover;
-}
-.ABOUT .texte p{
-   color: var(--text-color);
-   max-width: 600px;
-   line-height: 2;
-   padding: 10px 20px;
-   text-transform: capitalize;
-}
-.ABOUT .texte h2{
-   color: var(--black-color);
-   text-transform: capitalize;
-   font-size: 30px;
-}
-.comments h1{
-   text-align: center;
-   text-transform: capitalize;
-   color: var(--main-color);
-}
-.clients{
-   display: flex;
+.help-main {
+   height: 80vh;
+   width: 80%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   place-items: center;
    justify-content: center;
-   align-content: center;
-   margin: 50px;
-   gap: 50px;
-}
-.col{
-   max-width: 200px;
-   height: 200px;
-   border-radius: 8px;
-   padding: 10px;
-   background: var(--white-color);
-   position: relative;
-}
-.col h4{
-   color: var(--black-color);
-}
-.col p{
-   color: #c8c8c8;
-   font-size: 12px;
-   text-align: center;
-   }
-.profile{
-   display: flex;
-   flex-direction: column;
    align-items: center;
-   margin-bottom: 15px;
-}
-.profile img{
-   width: 50px;
-   height: 60px;
-   border-radius: 50%;
+   margin-bottom: 30px;
 }
 
-.location h1{
-   text-align: center;
+.help-main img {
+   width: 500px;
+   border-radius: 10px;
+   animation: slideRight 1.5s ease forwards;
+}
+
+.help-main .help-text {
+   animation: slideLeft 1.5s ease forwards;
+}
+
+.help-main .help-text h2 {
+   font-size: var(--h3-font);
    color: var(--main-color);
-   padding: 40px;
+   letter-spacing: 2px;
 }
 
-.maps{
-   position: relative;
-   width: 100%;
-   height: 300px;
+.help-main .help-text p {
+   margin: 30px 0;
+   font-size: 1rem;
+   line-height: 30px;
+   color: var(--p-color);
 }
+
+.help-main .help-text a {
+   letter-spacing: 2px;
+   font-size: 1rem;
+   border: 1px solid var(--main-color);
+   border-radius: 10px;
+   font-weight: 500;
+   padding: 0.4rem 0.7rem;
+   text-decoration: none;
+   background-color: var(--main-color);
+   color: var(--white-color);
+   cursor: pointer;
+   transition: 0.8s;
+}
+
+.help-main .help-text a:hover {
+   color: var(--black-color);
+   border: 1px solid var(--main-color);
+   background-color: var(--background);
+}
+
+
+
+
+
 .footer{
    background-color:var(--fotter-color);
    padding-top: 70px;
@@ -231,10 +207,10 @@ h1 a,
    font-size: 22px;
    margin-bottom: 25px; 
    padding-bottom: 10px;
-   border-bottom: var(--main-color);
+   border-bottom: var(var(--main-color));
 }
 .copyright{
    text-align: center;
    padding: 15px;
    font-size: 17px;
-}  
+}

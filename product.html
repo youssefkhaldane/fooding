@@ -8,11 +8,12 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="product.css">
+    <script defer src=".js"></script>
     <title>Food</title>
 </head>
 <body>
     
-   <div class="home">
+  <div class="home">
     <nav class="navigation">
 
         <h1><a href="index.html">Fooding</a></h1>
@@ -21,200 +22,339 @@
                 <li><a href="about.html">About us</a></li>
                 <li><a class="first-nav" href="product.html">Product</a></li>
                 <li><a href="Account.html">Account</a></li>
-                <li><a  href="reservation.html">reservation</a></li>
+                <li><a  href="help.html">Help</a></li>
             </ul>
                 
                 <div class="add">
-                <a class="sign" href="sign-in.html">sign in</a>
+                <a class="sign" href="Account.html">sign in</a>
                 <a href="#"><i class="material-icons">shopping_cart</i></a>
                 <sup id="notif">0</sup>
             </div>
     </nav>
-<!--     
+  </div>
+
+
+
     <div class="text">
-        <h4>Coffee Drink</h4>
-        <h3>A Drink With Many Varieties !</h3>
+      <h4>Moroccan Dishes</h4>
+      <h3>The Best Moroccan Dishes !</h3>
+    </div>
+    <div class="container">
+      <div class="Product  Product1">
+        <img class=" Product-Img p1" src="./images/couscos.png" />
+        <span class="favorite-icon" onclick="toggleFavorite(this)">&#9733;</span>
+        <h3 class="p-name">COUSCOUS</h3>
+        <h4 class="p-price">11.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-      <div class="container">
-        <div class="Product  Product1">
-          <img  class=" Product-Img p1" src="imag/Americano_coffee.png" />
-          <h3 class="p-name">Coffee Americano</h3>
-          <h4 class="p-price">6.5$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product2">
-          <img  class="Product-Img p2" src="imag/Cappuccino.png" id="buy-btn" />
-          <h3 class="p-name">Cappuccino</h3>
-          <h4 class="p-price">6.5$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product3">
-          <img  class="Product-Img p3" src="imag/Mocha_Coffee.png" id="buy-btn" />
-          <h3 class="p-name">Coffee mocha</h3>
-          <h4 class="p-price">6.00$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product4">
-          <img  class="Product-Img p4" src="imag/latte_coffee.png" id="buy-btn" />
-          <h3 class="p-name">Coffee Latte</h3>
-          <h4 class="p-price">4.49$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product5">
-          <img  class="Product-Img p5" src="imag/latte-vanilla.png" id="buy-btn" />
-          <h3 class="p-name">vanila Latte</h3>
-          <h4 class="p-price">5.05$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product6">
-          <img  class="Product-Img p6" src="imag/ice.webp" alt="" />
-          <h3 class="p-name">Ice Coffee</h3>
-          <h4 class="p-price">6.5$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product7">
-          <img  class=" Product-Img p7" src="imag/Milk_Coffee.webp" alt="" />
-          <h3 class="p-name">Coffe Milk</h3>
-          <h4 class="p-price">4.05$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product8">
-          <img  class=" Product-Img p8" src="imag/cold_brew.png" alt="" />
-          <h3 class="p-name">Cold Brew</h3>
-          <h4 class="p-price">4.45$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
+
+      <div class="Product  Product2">
+        <img  class="Product-Img p2" src="./images/maroc-rfisa.jpeg" id="buy-btn" />
+        <h3 class="p-name">RFISSA</h3>
+        <h4 class="p-price">15.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-  
-      <!-- tea selection 
-  
-      <div class="text">
-        <h4>TEA SELECTION</h4>
-        <h3>Hot or cold beverage</h3>
+
+      <div class="Product  Product3">
+        <img  class="Product-Img p3" src="./images/kefta-tagine-moroccan.jpg" id="buy-btn" />
+        <h3 class="p-name">KEFTA WITH EGGS</h3>
+        <h4 class="p-price">5.00$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-      <div class="container">
-        <div class="Product Product9">
-          <img  class="Product-Img p9" src="imag/GreenTea.png" alt="" />
-          <h3 class="p-name">Green Tea</h3>
-          <h4 class="p-price">15.99$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product  Product10">
-          <img  class="Product-Img p10" src="imag/Iced_Black_Tea.png" alt="" />
-          <h3 class="p-name">ICED BLACK TEA</h3>
-          <h4 class="p-price">6.5$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product11">
-          <img  class="Product-Img p11" src="imag/lipton.webp" alt="" />
-          <h3 class="p-name">Lipton Tea</h3>
-          <h4 class="p-price">4.05$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product12">
-          <img  class="Product-Img p12" src="imag/Moroccain_Tea.png" alt="" />
-          <h3 class="p-name">Marocain TEA</h3>
-          <h4 class="p-price">6.5$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
+
+      <div class="Product  Product4">
+        <img  class="Product-Img p4" src="./images/poisson.png" id="buy-btn" />
+        <h3 class="p-name">CRILLED FISH</h3>
+        <h4 class="p-price">4.49$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-  
-      Our collection -->
-      <!--<div class="text">
-        <h4>Our collection</h4>
-        <h3>other stuff you might like</h3>
+
+      <div class="Product  Product5">
+        <img  class="Product-Img p5" src="./images/tajin_lug.png" id="buy-btn" />
+        <h3 class="p-name">CHICKEN TAGINE</h3>
+        <h4 class="p-price">7.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-      <div class="container">
-        <div class="Product  Product13">
-          <img  class="Product-Img p13" src="imag/flavia.png" alt="" />
-          <h3 class="p-name">Flavia CREATION 150</h3>
-          <h4 class="p-price">50.99$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product14">
-          <img  class="Product-Img p14" src="imag/Cup_Coffee.png" alt="" />
-          <h3 class="p-name">CUP COFFEE</h3>
-          <h4 class="p-price">13$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product15">
-          <img  class=" Product-Img p15" src="imag/NeSpresso_Capsules.png" alt="" />
-          <h3 class="p-name">NeSpresso Capsules</h3>
-          <h4 class="p-price">32.00$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product16">
-          <img  class="Product-Img p16" src="imag/spoon.png" alt="" />
-          <h3 class="p-name">Long Spoon Coffee</h3>
-          <h4 class="p-price">7.98$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product17">
-          <img  class="Product-Img p17" src="imag/pact_coffee.png" />
-          <h3 class="p-name">PACT COFFEE</h3>
-          <h4 class="p-price">9.95$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product18">
-          <img  class="Product-Img p18" src="imag/Tea_Mushrooms.png" alt="" />
-          <h3 class="p-name">Mushroom Tea</h3>
-          <h4 class="p-price">26.00$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product19">
-          <img  class="Product-Img p19" src="imag/BroChoco.png" alt="" />
-          <h3 class="p-name">BROCHOCO Original</h3>
-          <h4 class="p-price">12.20$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
-  
-        <div class="Product Product20">
-          <img  class="Product-Img p20" src="imag/chocolate-cookies.png" alt="" />
-          <h3 class="p-name">Grandma's Chocolate</h3>
-          <h4 class="p-price">30.99$</h4>
-          <button class="buy-btn">Add To Cart</button>
-        </div>
+
+      <div class="Product  Product6">
+        <img  class="Product-Img p6" src="./images/salad_riz.png" alt="" />
+        <h3 class="p-name">RICE SALAD</h3>
+        <h4 class="p-price">3.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
       </div>
-  
-      -->
+
+      <div class="Product  Product7">
+        <img  class=" Product-Img p7" src="./images/poulet.png" alt="" />
+        <h3 class="p-name">ROASTED CHICKEN</h3>
+        <h4 class="p-price">12.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product8">
+        <img  class=" Product-Img p8" src="./images/spaghitte.png" alt="" />
+        <h3 class="p-name">SPAGHETTI</h3>
+        <h4 class="p-price">9.45$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+    </div>
 
 
 
 
+    <div class="text">
+      <h4>Turkish Dishes</h4>
+      <h3>The Best Turkish Dishes !</h3>
+    </div>
+    <div class="container">
+      <div class="Product  Product1">
+        <img  class=" Product-Img p1" src="./images/mo3amar.png" />
+        <h3 class="p-name">BOREK</h3>
+        <h4 class="p-price">10.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product2">
+        <img  class="Product-Img p2" src="./images/food_torkey.png" id="buy-btn" />
+        <h3 class="p-name">MEAT WITH FRITES</h3>
+        <h4 class="p-price">12.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product3">
+        <img  class="Product-Img p3" src="./images/raghifa.png" id="buy-btn" />
+        <h3 class="p-name">TURKISH TACOS</h3>
+        <h4 class="p-price">6.50$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product4">
+        <img  class="Product-Img p4" src="./images/raisa-f.jpeg" id="buy-btn" />
+        <h3 class="p-name">SARMA</h3>
+        <h4 class="p-price">5.49$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product5">
+        <img  class="Product-Img p5" src="./images/kabab.png" id="buy-btn" />
+        <h3 class="p-name">Turkish KEBAB</h3>
+        <h4 class="p-price">13.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product6">
+        <img  class="Product-Img p6" src="./images/chawarma.png" alt="" />
+        <h3 class="p-name">CHAWARMA</h3>
+        <h4 class="p-price">11.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product7">
+        <img  class=" Product-Img p7" src="./images/kafta-kabab.png" alt="" />
+        <h3 class="p-name">KEFTA KABAB</h3>
+        <h4 class="p-price">9.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product8">
+        <img  class=" Product-Img p8" src="./images/kisspng-turkish-cuisine-pide-doner-kebab-lahmajoun-pizza-5aee1303f1ded1.6198511515255518759907.png" alt="" />
+        <h3 class="p-name">KARADENIZ TURTASI</h3>
+        <h4 class="p-price">10.35$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="text">
+      <h4>Japanese Dishes</h4>
+      <h3>The Best Japanese Dishes !</h3>
+    </div>
+    <div class="container">
+      <div class="Product  Product1">
+        <img  class=" Product-Img p1" src="./images/food-1.png" />
+        <h3 class="p-name">SUSCHI</h3>
+        <h4 class="p-price">16.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product2">
+        <img  class="Product-Img p2" src="./images/food-2.png" id="buy-btn" />
+        <h3 class="p-name">TAKOYAKI</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product3">
+        <img  class="Product-Img p3" src="./images/food-3.png" id="buy-btn" />
+        <h3 class="p-name">MATcha</h3>
+        <h4 class="p-price">7.00$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product4">
+        <img  class="Product-Img p4" src="./images/food-4.png" id="buy-btn" />
+        <h3 class="p-name">RAMEN</h3>
+        <h4 class="p-price">8.49$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product5">
+        <img  class="Product-Img p5" src="./images/food-5.png" id="buy-btn" />
+        <h3 class="p-name">NABE-YAKI</h3>
+        <h4 class="p-price">5.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product6">
+        <img  class="Product-Img p6" src="./images/food-6.png" alt="" />
+        <h3 class="p-name">SATSUMA-AGE</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product7">
+        <img  class=" Product-Img p7" src="./images/food-7.png" alt="" />
+        <h3 class="p-name">TEMPURE</h3>
+        <h4 class="p-price">7.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product8">
+        <img  class=" Product-Img p8" src="./images/food-8.png" alt="" />
+        <h3 class="p-name">YAKITORI</h3>
+        <h4 class="p-price">6.45$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+    </div>
 
 
 
 
+    <div class="text">
+      <h4>International Dishes</h4>
+      <h3>The Best International Dishes !</h3>
+    </div>
+    <div class="container">
+      <div class="Product  Product1">
+        <img  class=" Product-Img p1" src="./images/word-1.png" />
+        <h3 class="p-name">TAGLIATEL</h3>
+        <h4 class="p-price">8.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product2">
+        <img  class="Product-Img p2" src="./images/word-2.png" id="buy-btn" />
+        <h3 class="p-name">PENNE</h3>
+        <h4 class="p-price">9.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product3">
+        <img  class="Product-Img p3" src="./images/word-3.png" id="buy-btn" />
+        <h3 class="p-name">PIZZA
+        </h3>
+        <h4 class="p-price">6.00$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product4">
+        <img  class="Product-Img p4" src="./images/word-4.png" id="buy-btn" />
+        <h3 class="p-name">LAZANYA</h3>
+        <h4 class="p-price">4.49$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product5">
+        <img  class="Product-Img p5" src="./images/word-5.png" id="buy-btn" />
+        <h3 class="p-name">MEAT WITH LARGE FRIES</h3>
+        <h4 class="p-price">5.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product6">
+        <img  class="Product-Img p6" src="./images/word-6.png" alt="" />
+        <h3 class="p-name">NUGGETS</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product7">
+        <img  class=" Product-Img p7" src="./images/word-7.png" alt="" />
+        <h3 class="p-name">FRIED EGGS</h3>
+        <h4 class="p-price">4.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+
+      <div class="Product  Product8">
+        <img  class=" Product-Img p8" src="./images/word-8.png" alt="" />
+        <h3 class="p-name">SLICE MEAT</h3>
+        <h4 class="p-price">4.45$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+    </div>
 
 
 
+    <div class="text">
+      <h3>Drink And Ice Cream !</h3>
+    </div>
+    <div class="container">
+      <div class="Product  Product1">
+        <img  class=" Product-Img p1" src="./images/ice-cream-1.png" />
+        <h3 class="p-name">ICE CREAM SUNDAE</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product2">
+        <img  class="Product-Img p2" src="./images/ice-cream-2.png" id="buy-btn" />
+        <h3 class="p-name">ICE CREAM CONE</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product3">
+        <img  class="Product-Img p3" src="./images/ice-cream-3.png" id="buy-btn" />
+        <h3 class="p-name">ZA3ZA3</h3>
+        <h4 class="p-price">6.00$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product4">
+        <img  class="Product-Img p4" src="./images/ice-cream-4.png" id="buy-btn" />
+        <h3 class="p-name">ICE CREAM </h3>
+        <h4 class="p-price">4.49$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product5">
+        <img  class="Product-Img p5" src="./images/boisson-1.png" id="buy-btn" />
+        <h3 class="p-name">MOJITO</h3>
+        <h4 class="p-price">5.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product6">
+        <img  class="Product-Img p6" src="./images/boisson-2.png" alt="" />
+        <h3 class="p-name">SOFT DRINKS</h3>
+        <h4 class="p-price">6.5$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
+      <div class="Product  Product7">
+        <img  class=" Product-Img p7" src="./images/boisson-3.png" alt="" />
+        <h3 class="p-name">RED FRUITS JUICE</h3>
+        <h4 class="p-price">4.05$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
 
-
-
-
-
+      <div class="Product  Product8">
+        <img  class=" Product-Img p8" src="./images/boisson-4.png" alt="" />
+        <h3 class="p-name">ORANGE JUICE</h3>
+        <h4 class="p-price">4.45$</h4>
+        <button class="buy-btn">Add To Cart</button>
+      </div>
+    </div>
 
 
 
@@ -229,7 +369,7 @@
         <div class="content">
             <div class="contact-us">
               <h3>Contact Us</h3>
-                 
+                
               <ul>
                   <li>Email : youssefkhaldane@gmail.com</li>
                   <li>Phone : +212 635725396</li>
@@ -238,9 +378,9 @@
               </ul>
           </div>
           <div class="quick-links">
-           
+          
                   <h3>Quick links</h3>
-             
+            
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About us</a></li>
